@@ -23,7 +23,7 @@
   - name: update repository index
     apt:
       update_cache: yes
-    when: ansible_disctribution == "CentOS"
+    when: ansible_distribution == "CentOS"
 
   - name: install apache2 package
     dnf:
